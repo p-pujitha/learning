@@ -1,0 +1,109 @@
+package com.pujitha.cloudfrontjavaapp;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
+import org.apache.http.entity.StringEntity;
+
+
+public class CallPostRestApis {
+	public static void main(String args[]) {
+		CloseableHttpClient httpClient = HttpClients.createDefault();
+		Properties properties = new Properties();
+		FileInputStream fileInputStream;
+		try {
+			fileInputStream = new FileInputStream(args[0]);
+			properties.load(fileInputStream);
+			String apiUrl = properties.getProperty("postapi");
+//			String requestBody = properties.getProperty("requestbody");
+//			System.out.println(requestBody);
+			String requestBody = "{\n"
+					+ "  \"_id\": \"64bfd4c178e6413ce2b2968a\",\n"
+					+ "  \"index\": 0,\n"
+					+ "  \"guid\": \"4e70a56b-9369-4fba-b152-334cbed21f36\",\n"
+					+ "  \"isActive\": true,\n"
+					+ "  \"balance\": \"$2,346.82\",\n"
+					+ "  \"picture\": \"http://placehold.it/32x32\",\n"
+					+ "  \"age\": 39,\n"
+					+ "  \"eyeColor\": \"green\",\n"
+					+ "  \"name\": \"Peters Rios\",\n"
+					+ "  \"gender\": \"male\",\n"
+					+ "  \"company\": \"POSHOME\",\n"
+					+ "  \"email\": \"petersrios@poshome.com\",\n"
+					+ "  \"phone\": \"+1 (959) 483-2810\",\n"
+					+ "  \"address\": \"278 Carroll Street, Gila, Guam, 4838\",\n"
+					+ "  \"about\": \"Fugiat ipsum quis sint sit ut enim commodo dolor ad sit dolore quis velit voluptate. Elit magna officia excepteur aute nulla excepteur Lorem ad sint laborum non adipisicing enim minim. Ad magna enim nisi sint elit officia minim esse proident deserunt exercitation incididunt laborum amet. Ad pariatur ad eiusmod voluptate ea ad laboris reprehenderit tempor ex aliqua ea aliquip. Ullamco ad irure ut dolor nisi ea non commodo.\\r\\n\",\n"
+					+ "  \"registered\": \"2020-02-02T06:30:57 -06:-30\",\n"
+					+ "  \"latitude\": -70.492411,\n"
+					+ "  \"longitude\": -117.753201,\n"
+					+ "  \"tags\": [\n"
+					+ "    \"culpa\",\n"
+					+ "    \"labore\",\n"
+					+ "    \"labore\",\n"
+					+ "    \"eu\",\n"
+					+ "    \"enim\",\n"
+					+ "    \"laborum\",\n"
+					+ "    \"adipisicing\"\n"
+					+ "  ],\n"
+					+ "  \"friends\": [\n"
+					+ "    {\n"
+					+ "      \"id\": 0,\n"
+					+ "      \"name\": \"Kristine Donovan\"\n"
+					+ "    },\n"
+					+ "    {\n"
+					+ "      \"id\": 1,\n"
+					+ "      \"name\": \"Beach Green\"\n"
+					+ "    },\n"
+					+ "    {\n"
+					+ "      \"id\": 2,\n"
+					+ "      \"name\": \"Jeannine Monroe\"\n"
+					+ "    }\n"
+					+ "  ],\n"
+					+ "  \"greeting\": \"Hello, Peters Rios! You have 9 unread messages.\",\n"
+					+ "  \"favoriteFruit\": \"banana\"\n"
+					+ "}";
+//			String requestBody = "{\"_id\":\"64bfd4c178e6413ce2b2968a\",\"index\":0,\"guid\":\"4e70a56b-9369-4fba-b152-334cbed21f36\",\"isActive\":true,\"balance\":\"$2,346.82\",\"picture\":\"http://placehold.it/32x32\",\"age\":39,\"eyeColor\":\"green\",\"name\":\"Peters Rios\",\"gender\":\"male\",\"company\":\"POSHOME\",\"email\":\"petersrios@poshome.com\",\"phone\":\"+1 (959) 483-2810\",\"address\":\"278 Carroll Street, Gila, Guam, 4838\",\"about\":\"Fugiat ipsum quis sint sit ut enim commodo dolor ad sit dolore quis velit voluptate. Elit magna officia excepteur aute nulla excepteur Lorem ad sint laborum non adipisicing enim minim. Ad magna enim nisi sint elit officia minim esse proident deserunt exercitation incididunt laborum amet. Ad pariatur ad eiusmod voluptate ea ad laboris reprehenderit tempor ex aliqua ea aliquip. Ullamco ad irure ut dolor nisi ea non commodo.\\r\\n\",\"registered\":\"2020-02-02T06:30:57 -06:-30\",\"latitude\":-70.492411,\"longitude\":-117.753201,\"tags\":[\"culpa\",\"labore\",\"labore\",\"eu\",\"enim\",\"laborum\",\"adipisicing\"],\"friends\":[{\"id\":0,\"name\":\"Kristine Donovan\"},{\"id\":1,\"name\":\"Beach Green\"},{\"id\":2,\"name\":\"Jeannine Monroe\"}],\"greeting\":\"Hello, Peters Rios! You have 9 unread messages.\",\"favoriteFruit\":\"banana\",\"_id\":\"64bfd4c178e6413ce2b2968a\",\"index\":0,\"guid\":\"4e70a56b-9369-4fba-b152-334cbed21f36\",\"isActive\":true,\"balance\":\"$2,346.82\",\"picture\":\"http://placehold.it/32x32\",\"age\":39,\"eyeColor\":\"green\",\"name\":\"Peters Rios\",\"gender\":\"male\",\"company\":\"POSHOME\",\"email\":\"petersrios@poshome.com\",\"phone\":\"+1 (959) 483-2810\",\"address\":\"278 Carroll Street, Gila, Guam, 4838\",\"about\":\"Fugiat ipsum quis sint sit ut enim commodo dolor ad sit dolore quis velit voluptate. Elit magna officia excepteur aute nulla excepteur Lorem ad sint laborum non adipisicing enim minim. Ad magna enim nisi sint elit officia minim esse proident deserunt exercitation incididunt laborum amet. Ad pariatur ad eiusmod voluptate ea ad laboris reprehenderit tempor ex aliqua ea aliquip. Ullamco ad irure ut dolor nisi ea non commodo.\\r\\n\",\"registered\":\"2020-02-02T06:30:57 -06:-30\",\"latitude\":-70.492411,\"longitude\":-117.753201,\"tags\":[\"culpa\",\"labore\",\"labore\",\"eu\",\"enim\",\"laborum\",\"adipisicing\"],\"friends\":[{\"id\":0,\"name\":\"Kristine Donovan\"},{\"id\":1,\"name\":\"Beach Green\"},{\"id\":2,\"name\":\"Jeannine Monroe\"}],\"greeting\":\"Hello, Peters Rios! You have 9 unread messages.\",\"favoriteFruit\":\"banana\",\"_id\":\"64bfd4c178e6413ce2b2968a\",\"index\":0,\"guid\":\"4e70a56b-9369-4fba-b152-334cbed21f36\",\"isActive\":true,\"balance\":\"$2,346.82\",\"picture\":\"http://placehold.it/32x32\",\"age\":39,\"eyeColor\":\"green\",\"name\":\"Peters Rios\",\"gender\":\"male\",\"company\":\"POSHOME\",\"email\":\"petersrios@poshome.com\",\"phone\":\"+1 (959) 483-2810\",\"address\":\"278 Carroll Street, Gila, Guam, 4838\",\"about\":\"Fugiat ipsum quis sint sit ut enim commodo dolor ad sit dolore quis velit voluptate. Elit magna officia excepteur aute nulla excepteur Lorem ad sint laborum non adipisicing enim minim. Ad magna enim nisi sint elit officia minim esse proident deserunt exercitation incididunt laborum amet. Ad pariatur ad eiusmod voluptate ea ad laboris reprehenderit tempor ex aliqua ea aliquip. Ullamco ad irure ut dolor nisi ea non commodo.\\r\\n\",\"registered\":\"2020-02-02T06:30:57 -06:-30\",\"latitude\":-70.492411,\"longitude\":-117.753201,\"tags\":[\"culpa\",\"labore\",\"labore\",\"eu\",\"enim\",\"laborum\",\"adipisicing\"],\"friends\":[{\"id\":0,\"name\":\"Kristine Donovan\"},{\"id\":1,\"name\":\"Beach Green\"},{\"id\":2,\"name\":\"Jeannine Monroe\"}],\"greeting\":\"Hello, Peters Rios! You have 9 unread messages.\",\"favoriteFruit\":\"banana\"}";
+//			String requestBody = "{\"_id\":\"64bfd4c178e6413ce2b2968a\",\"index\":0,\"guid\":\"4e70a56b-9369-4fba-b152-334cbed21f36\",\"isActive\":true,\"balance\":\"$2,346.82\",\"picture\":\"http://placehold.it/32x32\",\"age\":39,\"eyeColor\":\"green\",\"name\":\"Peters Rios\",\"gender\":\"male\",\"company\":\"POSHOME\",\"email\":\"petersrios@poshome.com\",\"phone\":\"+1 (959) 483-2810\",\"address\":\"278 Carroll Street, Gila, Guam, 4838\",\"about\":\"Fugiat ipsum quis sint sit ut enim commodo dolor ad sit dolore quis velit voluptate. Elit magna officia excepteur aute nulla excepteur Lorem ad sint laborum non adipisicing enim minim. Ad magna enim nisi sint elit officia minim esse proident deserunt exercitation incididunt laborum amet. Ad pariatur ad eiusmod voluptate ea ad laboris reprehenderit tempor ex aliqua ea aliquip. Ullamco ad irure ut dolor nisi ea non commodo.\\r\\n\",\"registered\":\"2020-02-02T06:30:57 -06:-30\",\"latitude\":-70.492411,\"longitude\":-117.753201,\"tags\":[\"culpa\",\"labore\",\"labore\",\"eu\",\"enim\",\"laborum\",\"adipisicing\"],\"friends\":[{\"id\":0,\"name\":\"Kristine Donovan\"},{\"id\":1,\"name\":\"Beach Green\"},{\"id\":2,\"name\":\"Jeannine Monroe\"}],\"greeting\":\"Hello, Peters Rios! You have 9 unread messages.\",\"favoriteFruit\":\"banana\",\"_id\":\"64bfd4c178e6413ce2b2968a\",\"index\":0,\"guid\":\"4e70a56b-9369-4fba-b152-334cbed21f36\",\"isActive\":true,\"balance\":\"$2,346.82\",\"picture\":\"http://placehold.it/32x32\",\"age\":39,\"eyeColor\":\"green\",\"name\":\"Peters Rios\",\"gender\":\"male\",\"company\":\"POSHOME\",\"email\":\"petersrios@poshome.com\",\"phone\":\"+1 (959) 483-2810\",\"address\":\"278 Carroll Street, Gila, Guam, 4838\",\"about\":\"Fugiat ipsum quis sint sit ut enim commodo dolor ad sit dolore quis velit voluptate. Elit magna officia excepteur aute nulla excepteur Lorem ad sint laborum non adipisicing enim minim. Ad magna enim nisi sint elit officia minim esse proident deserunt exercitation incididunt laborum amet. Ad pariatur ad eiusmod voluptate ea ad laboris reprehenderit tempor ex aliqua ea aliquip. Ullamco ad irure ut dolor nisi ea non commodo.\\r\\n\",\"registered\":\"2020-02-02T06:30:57 -06:-30\",\"latitude\":-70.492411,\"longitude\":-117.753201,\"tags\":[\"culpa\",\"labore\",\"labore\",\"eu\",\"enim\",\"laborum\",\"adipisicing\"],\"friends\":[{\"id\":0,\"name\":\"Kristine Donovan\"},{\"id\":1,\"name\":\"Beach Green\"},{\"id\":2,\"name\":\"Jeannine Monroe\"}],\"greeting\":\"Hello, Peters Rios! You have 9 unread messages.\",\"favoriteFruit\":\"banana\",\"_id\":\"64bfd4c178e6413ce2b2968a\",\"index\":0,\"guid\":\"4e70a56b-9369-4fba-b152-334cbed21f36\",\"isActive\":true,\"balance\":\"$2,346.82\",\"picture\":\"http://placehold.it/32x32\",\"age\":39,\"eyeColor\":\"green\",\"name\":\"Peters Rios\",\"gender\":\"male\",\"company\":\"POSHOME\",\"email\":\"petersrios@poshome.com\",\"phone\":\"+1 (959) 483-2810\",\"address\":\"278 Carroll Street, Gila, Guam, 4838\",\"about\":\"Fugiat ipsum quis sint sit ut enim commodo dolor ad sit dolore quis velit voluptate. Elit magna officia excepteur aute nulla excepteur Lorem ad sint laborum non adipisicing enim minim. Ad magna enim nisi sint elit officia minim esse proident deserunt exercitation incididunt laborum amet. Ad pariatur ad eiusmod voluptate ea ad laboris reprehenderit tempor ex aliqua ea aliquip. Ullamco ad irure ut dolor nisi ea non commodo.\\r\\n\",\"registered\":\"2020-02-02T06:30:57 -06:-30\",\"latitude\":-70.492411,\"longitude\":-117.753201,\"tags\":[\"culpa\",\"labore\",\"labore\",\"eu\",\"enim\",\"laborum\",\"adipisicing\"],\"friends\":[{\"id\":0,\"name\":\"Kristine Donovan\"},{\"id\":1,\"name\":\"Beach Green\"},{\"id\":2,\"name\":\"Jeannine Monroe\"}],\"greeting\":\"Hello, Peters Rios! You have 9 unread messages.\",\"favoriteFruit\":\"banana\",\"_id\":\"64bfd4c178e6413ce2b2968a\",\"index\":0,\"guid\":\"4e70a56b-9369-4fba-b152-334cbed21f36\",\"isActive\":true,\"balance\":\"$2,346.82\",\"picture\":\"http://placehold.it/32x32\",\"age\":39,\"eyeColor\":\"green\",\"name\":\"Peters Rios\",\"gender\":\"male\",\"company\":\"POSHOME\",\"email\":\"petersrios@poshome.com\",\"phone\":\"+1 (959) 483-2810\",\"address\":\"278 Carroll Street, Gila, Guam, 4838\",\"about\":\"Fugiat ipsum quis sint sit ut enim commodo dolor ad sit dolore quis velit voluptate. Elit magna officia excepteur aute nulla excepteur Lorem ad sint laborum non adipisicing enim minim. Ad magna enim nisi sint elit officia minim esse proident deserunt exercitation incididunt laborum amet. Ad pariatur ad eiusmod voluptate ea ad laboris reprehenderit tempor ex aliqua ea aliquip. Ullamco ad irure ut dolor nisi ea non commodo.\\r\\n\",\"registered\":\"2020-02-02T06:30:57 -06:-30\",\"latitude\":-70.492411,\"longitude\":-117.753201,\"tags\":[\"culpa\",\"labore\",\"labore\",\"eu\",\"enim\",\"laborum\",\"adipisicing\"],\"friends\":[{\"id\":0,\"name\":\"Kristine Donovan\"},{\"id\":1,\"name\":\"Beach Green\"},{\"id\":2,\"name\":\"Jeannine Monroe\"}],\"greeting\":\"Hello, Peters Rios! You have 9 unread messages.\",\"favoriteFruit\":\"banana\",\"_id\":\"64bfd4c178e6413ce2b2968a\",\"index\":0,\"guid\":\"4e70a56b-9369-4fba-b152-334cbed21f36\",\"isActive\":true,\"balance\":\"$2,346.82\",\"picture\":\"http://placehold.it/32x32\",\"age\":39,\"eyeColor\":\"green\",\"name\":\"Peters Rios\",\"gender\":\"male\",\"company\":\"POSHOME\",\"email\":\"petersrios@poshome.com\",\"phone\":\"+1 (959) 483-2810\",\"address\":\"278 Carroll Street, Gila, Guam, 4838\",\"about\":\"Fugiat ipsum quis sint sit ut enim commodo dolor ad sit dolore quis velit voluptate. Elit magna officia excepteur aute nulla excepteur Lorem ad sint laborum non adipisicing enim minim. Ad magna enim nisi sint elit officia minim esse proident deserunt exercitation incididunt laborum amet. Ad pariatur ad eiusmod voluptate ea ad laboris reprehenderit tempor ex aliqua ea aliquip. Ullamco ad irure ut dolor nisi ea non commodo.\\r\\n\",\"registered\":\"2020-02-02T06:30:57 -06:-30\",\"latitude\":-70.492411,\"longitude\":-117.753201,\"tags\":[\"culpa\",\"labore\",\"labore\",\"eu\",\"enim\",\"laborum\",\"adipisicing\"],\"friends\":[{\"id\":0,\"name\":\"Kristine Donovan\"},{\"id\":1,\"name\":\"Beach Green\"},{\"id\":2,\"name\":\"Jeannine Monroe\"}],\"greeting\":\"Hello, Peters Rios! You have 9 unread messages.\",\"favoriteFruit\":\"banana\",\"_id\":\"64bfd4c178e6413ce2b2968a\",\"index\":0,\"guid\":\"4e70a56b-9369-4fba-b152-334cbed21f36\",\"isActive\":true,\"balance\":\"$2,346.82\",\"picture\":\"http://placehold.it/32x32\",\"age\":39,\"eyeColor\":\"green\",\"name\":\"Peters Rios\",\"gender\":\"male\",\"company\":\"POSHOME\",\"email\":\"petersrios@poshome.com\",\"phone\":\"+1 (959) 483-2810\",\"address\":\"278 Carroll Street, Gila, Guam, 4838\",\"about\":\"Fugiat ipsum quis sint sit ut enim commodo dolor ad sit dolore quis velit voluptate. Elit magna officia excepteur aute nulla excepteur Lorem ad sint laborum non adipisicing enim minim. Ad magna enim nisi sint elit officia minim esse proident deserunt exercitation incididunt laborum amet. Ad pariatur ad eiusmod voluptate ea ad laboris reprehenderit tempor ex aliqua ea aliquip. Ullamco ad irure ut dolor nisi ea non commodo.\\r\\n\",\"registered\":\"2020-02-02T06:30:57 -06:-30\",\"latitude\":-70.492411,\"longitude\":-117.753201,\"tags\":[\"culpa\",\"labore\",\"labore\",\"eu\",\"enim\",\"laborum\",\"adipisicing\"],\"friends\":[{\"id\":0,\"name\":\"Kristine Donovan\"},{\"id\":1,\"name\":\"Beach Green\"},{\"id\":2,\"name\":\"Jeannine Monroe\"}],\"greeting\":\"Hello, Peters Rios! You have 9 unread messages.\",\"favoriteFruit\":\"banana\"}";
+			int callRestApiTimes = Integer.parseInt(properties.getProperty("callPostRestApiTimes"));
+	        long startTime = System.currentTimeMillis();
+			for(int i=0; i<callRestApiTimes ; i++ ) {
+				String response = callRestApi(apiUrl, httpClient,requestBody);
+				System.out.println("API Response:\n" + response);
+			}
+	        long endTime = System.currentTimeMillis();
+	        long totalTime = endTime - startTime;
+	        System.out.println("......API URL...... : "+apiUrl);
+	        System.out.println("Process started at: " + new java.util.Date(startTime));
+	        System.out.println("Process ended at: " + new java.util.Date(endTime));
+	        System.out.println("Total time taken: " + totalTime + " milliseconds.");
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static String callRestApi(String apiUrl, CloseableHttpClient httpClient, String requestBody) throws IOException {
+		HttpPost httpPost = new HttpPost(apiUrl);
+
+        // Set the request body
+        StringEntity requestEntity = new StringEntity(requestBody);
+        httpPost.setEntity(requestEntity);
+        httpPost.setHeader("Content-Type", "application/json"); 
+
+        try (CloseableHttpResponse response = httpClient.execute(httpPost)) {
+            HttpEntity entity = response.getEntity();
+            if (entity != null) {
+                return EntityUtils.toString(entity);
+            }
+        }
+
+        return null;
+	}
+}

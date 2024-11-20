@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9cc21168-0628-4559-9df9-25b804ee8264" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/CoreJava.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoreJava8Learn/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoreJava8Learn/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoreJava8Learn/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoreJava8Learn/src/main/java/org/example/UUIDGEneration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoreJava8Learn/src/main/java/org/example/nonstaticex/NonStaticBlocks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoreJava8Learn/src/main/java/org/example/nonstaticex/ObjectReferenceEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoreJava8Learn/src/main/java/org/example/nonstaticex/ObjectReferenceStaticBlockEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoreJava8Learn/src/main/java/org/example/staticex/StaticMethodEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoreJava8Learn/src/main/java/org/example/staticex/StaticVariablesEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Datastructures/src/main/java/org/pujitha/learning/linkedlists/Add2Numbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Datastructures/src/main/java/org/pujitha/learning/linkedlists/DeleteTheGivenNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Datastructures/src/main/java/org/pujitha/learning/linkedlists/DetectALoopInLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Datastructures/src/main/java/org/pujitha/learning/linkedlists/IntersectionPointOfLinkedLists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Datastructures/src/main/java/org/pujitha/learning/linkedlists/MergeLinkedLists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Datastructures/src/main/java/org/pujitha/learning/linkedlists/MiddleOfLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Datastructures/src/main/java/org/pujitha/learning/linkedlists/RemoveNthNodeFromLast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Datastructures/src/main/java/org/pujitha/learning/linkedlists/ReverseLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Datastructures/src/main/java/udemy/course/learning/linkedlists/FindMiddleElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Datastructures/src/main/java/udemy/course/learning/linkedlists/FindMiddleElementLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Datastructures/src/main/java/udemy/course/learning/linkedlists/TestLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ecommerce/shopmeproject/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ecommerce/shopmeproject/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ecommerce/shopmeproject/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ecommerce/shopmeproject/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ecommerce/shopmeproject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ecommerce/shopmeproject/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ecommerce/shopmeproject/src/main/java/org/pujitha/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaFeatures/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava8Learn/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/Lambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/anonymusinnerclass/InnerClassWithLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/anonymusinnerclass/InnerclassWIthoutLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/anonymusinnerclass/LambdaLocalVariables.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/anonymusinnerclass/ThreadDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/anonymusinnerclass/ThreadDemoLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/bi_2inputArguments/BiConsumerEmployeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/bi_2inputArguments/BiConsumerExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/bi_2inputArguments/BiFunctionExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/bi_2inputArguments/BiFunctionExample2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/bi_2inputArguments/BiFunctionObjectExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/bi_2inputArguments/BiPredicateExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/collections/ArrayListSortWithlambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/collections/ArrayListSortWithoutLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/collections/ComparatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/collections/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/collections/MapSortWithLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/collections/ObjectSortWithLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/collections/SetSortWithLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/consumer/ConsumerAcceptMovieObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/consumer/ConsumerChaining.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/consumer/ConsumerSimpleExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/consumer/PredicateConsumerFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/doubleColonOperator/ConstructorReferenceExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/doubleColonOperator/MethodReferencInstanceExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/doubleColonOperator/MethodReferenceExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionalInterfaceEx/Ex2/Interf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionalInterfaceEx/Ex2/TestWithoutLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionalInterfaceEx/Ex2/WithLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionalInterfaceEx/Ex2/WithoutLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionalInterfaceEx/Ex3/Interf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionalInterfaceEx/Ex3/TestWithoutLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionalInterfaceEx/Ex3/WithLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionalInterfaceEx/Ex3/WithoutLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionalInterfaceEx/Interf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionalInterfaceEx/WIthLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionalInterfaceEx/WithoutLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionexamplws/FunctionChaining.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionexamplws/FunctionChaining2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionexamplws/FunctionIdentityExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionexamplws/FunctionSample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionexamplws/GradeOfStudent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/functionexamplws/SumOfEmployeeSalaries.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/interfaces/Interf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/interfaces/InterfaceMainMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/interfaces/InterfaceStaticMethodTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/interfaces/MultipleInterfacesDefaultMethodTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/interfaces/Test1ImplInterf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/interfaces/Test2ImplInterf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/predicateexamples/EmployeeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/predicateexamples/NamesStartsWitK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/predicateexamples/PredicateIsEqualTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/predicateexamples/PredicateJoining.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/predicateexamples/PredicateLambdaTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/predicateexamples/RemoveNullValuesFromList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/predicateexamples/SoftEngToPub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/predicateexamples/StringLengthGreaterThan5OrNot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/predicateexamples/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/predicateexamples/UserAuthentication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/primitivetypeFunctionalInterfaces/AutoBoxing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/primitivetypeFunctionalInterfaces/BinaryOperatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/primitivetypeFunctionalInterfaces/IntPredicateExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/primitivetypeFunctionalInterfaces/PrimitiveConsumerExamples.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/primitivetypeFunctionalInterfaces/PrimitiveFunctionExamples.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/primitivetypeFunctionalInterfaces/PrimitiveSupplierExamples.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/primitivetypeFunctionalInterfaces/UnaryOperatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/streams/BasicExample1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/streams/BasicExample2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/streams/BasicExample3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/streams/BasicExample4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/supplierexample/RandomName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/supplierexample/RandomOTP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/supplierexample/RandomPassword.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/main/java/org/example/supplierexample/SupplyDate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFeatures/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava8Learn/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructures/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructures/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructures/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructures/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2jsWRXFDe9RgYsOLvdmgfT5B28e" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="3e38e4d3-04cd-4a83-9c0d-92f63d4bb4a4" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9cc21168-0628-4559-9df9-25b804ee8264" name="Changes" comment="" />
+      <created>1722176257853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722176257853</updated>
+    </task>
+    <servers />
+  </component>
+</project>

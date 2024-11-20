@@ -1,0 +1,9 @@
+com.pujitha.springAnnotations.FortuneServiceImpl=org.springframework.stereotype.Component
+com.pujitha.springAnnotations.FortuneServiceImpl2=org.springframework.stereotype.Component
+com.pujitha.springAnnotations.FortuneServiceImpl3=org.springframework.stereotype.Component
+com.pujitha.springAnnotations.SportConfig=org.springframework.stereotype.Component
+com.pujitha.springAnnotations.SwimCoach=org.springframework.stereotype.Component
+com.pujitha.springAnnotations.TenisCoach=org.springframework.stereotype.Component
+com.pujitha.springAnnotations.TennisCoachDefault=org.springframework.stereotype.Component
+com.pujitha.springAnnotations.TennisCoachFieldInject=org.springframework.stereotype.Component
+com.pujitha.springAnnotations.TennisCoachQualifier=org.springframework.stereotype.Component

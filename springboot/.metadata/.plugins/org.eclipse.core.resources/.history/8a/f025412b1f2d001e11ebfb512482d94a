@@ -1,0 +1,70 @@
+package com.pujitha.cloudfrontjavaapp;
+
+import java.io.IOException;
+import java.util.Properties;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.config.Configurator;
+
+public class CallGetRestApis {
+    private static final Logger logger = LogManager.getLogger(CallGetRestApis.class);
+
+
+	public static void main(String args[]) {
+		System.out.println("App started")
+		Configurator.initialize(null, args[1]);
+		CloseableHttpClient httpClient = HttpClients.createDefault();
+		Properties properties = new Properties();
+		FileInputStream fileInputStream;
+		try {
+			fileInputStream = new FileInputStream(args[0]);
+			properties.load(fileInputStream);
+			String api = properties.getProperty("getapi");
+			String byteSize = properties.getProperty("getResponseByteSize");
+			String apiUrl = api + byteSize;
+			int callRestApiTimes = Integer.parseInt(properties.getProperty("callGetRestApiTimes"));
+	        long startTime = System.currentTimeMillis();
+			for(int i=0; i<callRestApiTimes ; i++ ) {
+				String response = callRestApi(apiUrl, httpClient);
+				logger.debug("API Response:\n" + response);
+				 System.out.println("API Response:\n" + response);
+
+			}
+	        long endTime = System.currentTimeMillis();
+	        long totalTime = endTime - startTime;
+	        logger.debug("......API URL...... : "+apiUrl);
+	        logger.debug("Process started at: " + new java.util.Date(startTime));
+	        logger.debug("Process ended at: " + new java.util.Date(endTime));
+	        logger.debug("Total time taken: " + totalTime + " milliseconds.");
+	        System.out.println("......API URL...... : "+apiUrl);
+	        System.out.println("Process started at: " + new java.util.Date(startTime));
+	        System.out.println("Process ended at: " + new java.util.Date(endTime));
+	        System.out.println("Total time taken: " + totalTime + " milliseconds.");
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static String callRestApi(String apiUrl, CloseableHttpClient httpClient) throws IOException {
+		HttpGet httpGet = new HttpGet(apiUrl);
+
+		try (CloseableHttpResponse response = httpClient.execute(httpGet)) {
+			HttpEntity entity = response.getEntity();
+			if (entity != null) {
+				return EntityUtils.toString(entity);
+			}
+		}
+
+		return null;
+	}
+}

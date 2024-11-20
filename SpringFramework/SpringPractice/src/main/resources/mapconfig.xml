@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean name="customer" class="com.pujitha.spring.Customer" p:id="101">
+        <property name="products">
+            <map>
+                <entry key="100" value="Iphone"/>
+                <entry key="101">
+                    <value>Macbook pro</value>
+                </entry>
+                <entry value="Ipad">
+                    <key>
+                        <value>102</value>
+                    </key>
+                </entry>
+                <entry>
+                    <key>
+                        <value>103</value>
+                    </key>
+                    <value>Apple watch</value>
+                </entry>
+
+            </map>
+        </property>
+
+
+    </bean>
+</beans>
